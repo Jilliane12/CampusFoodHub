@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Best food hub for your cravings!">
+    <meta name="author" content="Jilliane Dela Cruz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/.png" href="business logo .png">
+
+    <title>Campus Food Hub</title>
+    <style>
+        body {
+            font-family:  Georgia, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+             background: linear-gradient(to bottom, #ff9999, #ffcc66, #66cc66); 
+            color: white;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 0 0 15px 15px;
+        }
+
+        .navbar a {
+            background-color: transparent;
+            color: black; 
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            font-size: 18px;
+            border: 2px solid black; 
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar a:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .section {
+            display: none;
+            padding: 100px 20px;
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        #home:target,
+        #products:target,
+        #contact:target {
+            display: block;
+        }
+
+       #home {
+            display: block;
+        }
+
+        #products {
+        }
+
+        #contact {
+        }
+
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            font-size: 20px;
+            color: white;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 220px;
+            min-height: 250px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+
+        .product h2, .product ol, .product dl, .product p {
+            position: relative;
+            z-index: 2;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <section id="home" class="section">
+        <h2>Welcome to Campus Food Hub! Here, we provide good delivery, we also make sure that before delivering the food to you, it is packaged well. Thank you!</h2>
+    </section>
+
+    <section id="products" class="section">
+        <h2>Here are the products that we sell.</h2>
+        <div class="products-container">
+            <div class="product" style="background-image: url(https://i.pinimg.com/736x/3f/ef/67/3fef6702b00fae9541c88bdbdef3ce68.jpg);">
+                <h2>Sisig Burger Mushroom</h2>
+                <ol>
+                    <li>A1 Regular Sisig Burger Mushroom (&#8369;30)</li>
+                    <li>A2 Buy 1 take 1 Sisig Burger Mushroom (&#8369;55)</li>
+                </ol>
+            </div>
+            <div class="product" style="background-image: url(https://thetastyk.com/wp-content/uploads/2018/03/DSC08721Edit1-1024x683.jpg);">
+                <h2>Shawarma Mushroom</h2>
+                <ol>
+                    <li>B1 Regular Shawarma Mushroom (&#8369;45)</li>
+                </ol>
+            </div>
+            <div class="product" style="background-image: url(https://www.coffeebeans.ph/storage/2023/02/arabica-2.jpg);">
+                <h2>Coffee Series</h2>
+                <ol>
+                    <li>Coffee Latte (&#8369;39)</li>
+                    <li>Capuccino (&#8369;39)</li>
+                    <li>Caramel Macchiato (&#8369;39)</li>
+                    <li>Coffee Mocha (&#8369;39)</li>
+                </ol>
+            </div>
+            <div class="product" style="background-image: url(https://scontent.fmnl33-3.fna.fbcdn.net/v/t39.30808-6/470817079_122133968762452075_3095249154405001021_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGY5_zDX6qN9Cl8CaO06ykP6aqRUZG_warpqpFRkb_BqnylmoJwWLXbGmiYFLmEzQCSu_PP7zFn3fF0Z6pyn_7R&_nc_ohc=99qez486MOkQ7kNvgHHYDXi&_nc_oc=Adjdk-hjayeZwqWojYs0d79KMxmPOIyjhvW6xdj6CySedE4L-0CQZygwkK23GHTIMEE&_nc_zt=23&_nc_ht=scontent.fmnl33-3.fna&_nc_gid=55wLZf7CN9XQmx4hWLYOKw&oh=00_AYGACx4AQw9uAzZ68zC_RaB-Z9yQmItuLU3n2kpVay-UkA&oe=67DD8F71);">
+                <h2>Sweets</h2>
+                <ol>
+                    <li>Mini Graham bar (&#8369;15)</li>
+                    <li>Ice Candy (&#8369;10)</li>
+                </ol>
+            </div>
+            <div class="product" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr5xVTygLZLZEg0-XVO3q_TnLHzG9xut2Dmw&s);">
+            <h2>Cheese Corn</h2>
+            <ol>
+                <li>Small (&#8369;20)</li>
+                <li>Medium (&#8369;30)</li>
+            </ol>
+        </div>
+        <div class="product" style="background-image: url(https://scontent.fmnl33-5.fna.fbcdn.net/v/t39.30808-6/474711722_122139232070452075_1412924519697183269_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGg4E11LC664Q1JVRWbiT-Rmam7xblsOUqZqbvFuWw5SqxQ5B20AouWn2IfRTCoOvtPmxmAWFOT953ODC5CDv53&_nc_ohc=1wrC79kR_ZEQ7kNvgE82VcP&_nc_oc=Adg6idH5lBHUaC4IVyzaTaQxexiRP58_MvvaAqdAd1sSMeZiYE9vEs1raIL6tqZw3m8&_nc_zt=23&_nc_ht=scontent.fmnl33-5.fna&_nc_gid=C5mlnWe952EdHRoNX3dc1Q&oh=00_AYHlcxDr5_My_WbSJQh9Rx5GBozpL2Yc_ZQmNceEl_2ZOg&oe=67DD853B);">
+            <h2>Classic Peanut Polvoron</h2>
+            <ol>
+                <li>Polvoron - 10pcs (₱45)</li>
+            </ol>
+        </div>
+        <div class="product" style="background-image: url(https://scontent.fmnl33-2.fna.fbcdn.net/v/t39.30808-6/475983577_122141246600452075_213564647670074175_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFji2WCc_OV807hxWwVsvnd6XY1S2YmbebpdjVLZiZt5iPxxVD05p67Qnn12pIMQnnRlVVVbn-V8SFJBb7uasbx&_nc_ohc=25VmwYpEbJcQ7kNvgEFI4s7&_nc_oc=Adh6VzY6FWqHgwkWMyRG7QIlZ4mGKAQjmVYd-X2m9CNro2Y44IjNetnRRNTGyiWhFjg&_nc_zt=23&_nc_ht=scontent.fmnl33-2.fna&_nc_gid=HCcp2YQ-brNbt2mo5qCnWA&oh=00_AYHsCfDoJLVqjC-WZ2pgM9dlwNzftXzssOv9iXk1i1fBzQ&oe=67DD6845);">
+            <h2>Pre-Order Frozen</h2>
+            <ol>
+                <li>Chicken Siomai - 9pcs (&#8369;65)</li>
+                <li>Pork Siomai - 9pcs (&#8369;70)</li>
+                <li>Pork Shanghai - 7pcs (&#8369;60)</li>
+                <li>Chicken Tempura - 5pcs (&#8369;50)</li>
+                <li>Chicken Skinless - 5pcs (&#8369;60)</li>
+            </ol>
+        </div>
+        <div class="product" style="background-image: url(https://scontent.fmnl33-1.fna.fbcdn.net/v/t39.30808-6/474619488_122139303428452075_4175180285145696758_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHrdT5KWNP9yCAjne8JBR2NOvNg4lTIHG0682DiVMgcbU_oQXZA4D0Bt9ak8ndUxJ8HJjGlaDL_LZaOV376aPN3&_nc_ohc=Sk6PWjeIwR4Q7kNvgE7xviE&_nc_oc=Adicm7KyC5nCWZQ0RK7pQhV045lp7b98HtCgNm1LpjYis5frjAbnsJ5BLknvfgrmWCk&_nc_zt=23&_nc_ht=scontent.fmnl33-1.fna&_nc_gid=CjFgcJfOv4MmqD7PtnKkCQ&oh=00_AYEuWYhDpT2AicNE6__D4fQHDv7AwK0lN0gKSPkrpdCbTA&oe=67DC1979);">
+            <h2>Dream Cake (&#8369;60) </h2>
+        </div>
+        <div class="product" style="background-image: url(https://scontent.fmnl33-6.fna.fbcdn.net/v/t39.30808-6/475163836_122139903374452075_7547078117999388001_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE_qqk8v_Wyye6ZvPRoKOrINUVdSqUWGq41RV1KpRYarj7YV3S5IVD8juYjfL8AgV9jWSsaSus1jRLcV_ElTjIC&_nc_ohc=i_LDyuearisQ7kNvgEH3LW7&_nc_oc=Adiun5jOGht5LbgGozC6_iE5EQEfIoKPCy2TzBzwZV2nkJt1NMWua3EhKaD1zs68vkY&_nc_zt=23&_nc_ht=scontent.fmnl33-6.fna&_nc_gid=HL2XBS1C-6TEoXQy9Cs6Rw&oh=00_AYFe1wjLwSdjD2eppmQ07-gVpUntD2zR9edLY7tbzuilZQ&oe=67DD7E39);">
+            <h2>Party Box</h2>
+            <dl>
+                <dt><b>Party Box Contains:</b></dt>
+                <dd>- Spaghetti</dd>
+                <dd>- Carbonara</dd>
+                <dd>- Pansit Malabon</dd>
+                <dd>- Lumpiang Shanghai</dd>
+                <dd>- Chicken Wings</dd> 
+            </dl>
+            <p><mark style="background-color:pink;">&#8369;2000</mark></p>
+            <p><b>Good for 13-15 pax</b></p>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h1>If you're interested in ordering, here's our location, phone number and our facebook page. </h1>
+        <p><strong>Contact No.</strong> 0994 473 5621</p>
+        <p><strong>Location:</strong> Cityhall Compound, Bayanihan Gapan City 
+        <p><a href="https://www.facebook.com/share/19xVpa9fnZ/" target="_blank">Facebook</a>: Campus Food Hub</p>
+</section>
+        
+            <h2>Rate Our Food and Services</h2>
+
+    <div class="rating-container">
+    <p><strong>Rate the Food:</strong></p>
+    <div class="stars" id="food-rating">
+        ★ ★ ★ ★ ★
+    </div>
+    <p id="food-score">No rating given</p>
+
+    <p><strong>Rate the Service:</strong></p>
+    <div class="stars" id="service-rating">
+        ★ ★ ★ ★ ★
+    </div>
+    <p id="service-score">No rating given</p>
+
+    <button onclick="submitRating()">Submit Rating</button>
+    <p id="confirmation-msg"></p>
+</div>
+
+<style>
+    .rating-container {
+        margin-top: 20px;
+    }
+
+    .stars {
+        display: inline-block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #ccc;
+    }
+
+    .stars:hover, 
+    .stars.selected {
+        color: gold;
+    }
+</style>
+
+<script>
+    function addRatingSystem(ratingContainerId, scoreId) {
+        const starContainer = document.querySelector(`#${ratingContainerId}`);
+        let selectedRating = 0;
+
+        const stars = starContainer.textContent.trim().split(" ");
+
+        
+        stars.forEach((_, i) => {
+            stars[i] = `<span class='star' data-value='${i + 1}'>★</span>`;
+        });
+
+        starContainer.innerHTML = stars.join(" ");
+
+        
+        starContainer.addEventListener("click", function (event) {
+            if (event.target.classList.contains("star")) {
+                selectedRating = event.target.getAttribute("data-value");
+                updateStars(starContainer, selectedRating);
+                document.getElementById(scoreId).innerText = `You rated: ${selectedRating} stars`;
+            }
+        });
+
+        
+        function updateStars(container, rating) {
+            const stars = container.children;
+            for (let i = 0; i < stars.length; i++) {
+                stars[i].style.color = i < rating ? "gold" : "#ccc";
+            }
+        }
+    }
+
+    
+    addRatingSystem("food-rating", "food-score");
+    addRatingSystem("service-rating", "service-score");
+
+    
+    function submitRating() {
+        const foodRating = document.getElementById("food-score").innerText.replace("You rated: ", "").replace(" stars", "");
+        const serviceRating = document.getElementById("service-score").innerText.replace("You rated: ", "").replace(" stars", "");
+
+       
+        if (foodRating !== "No rating given" && serviceRating !== "No rating given") {
+            document.getElementById("confirmation-msg").innerText = "Thank you for your feedback!";
+        } else {
+            document.getElementById("confirmation-msg").innerText = "Please rate both food and service.";
+        }
+    }
+</script>
+    
+        <footer style="background-color: #333; color: white; padding: 20px 0; text-align: center; margin-top: 20px;">
+        <p>&copy; 2025 Campus Food Hub | All rights reserved</p>
+    </footer>
+   
+</body>
+</html>
